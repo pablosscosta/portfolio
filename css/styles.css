@@ -55,6 +55,64 @@ section p {
   margin: 0 auto;
 }
 
+section a {
+  text-decoration: none;
+}
+
+/* Sobre mim */
+
+
+.sobre-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sobre-container h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaço entre imagem e texto */
+    max-width: 800px; /* Largura máxima */
+    width: 100%;
+}
+.sobre-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-texto {
+    max-width: 600px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.perfil-img {
+    width: 150px;          /* Define a largura do círculo */
+    height: 150px;         /* Define a altura do círculo */
+    border-radius: 50%;    /* Torna a imagem redonda */
+    object-fit: cover;     /* Faz a imagem preencher o círculo sem distorcer */
+    object-position: center; /* Centraliza a imagem dentro do círculo */
+    margin-bottom: 20px;   /* Espaço entre a imagem e os botões */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra na imagem */
+}
+
+.nome {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
 /* Projetos */
 .projetos-lista {
   display: flex;
@@ -87,6 +145,30 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
+  /* Responsividade Sobre*/
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-conteudo {
+    flex-direction: row; /* Em telas maiores, coloca lado a lado */
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    text-align: left;
+  }
+
+  .sobre-img {
+    flex-shrink: 0;
+  }
+
+  .sobre-texto {
+    text-align: center;
+  }
+
+
+  /* Responsividade Projetos*/
   nav ul {
     flex-direction: column;
   }
@@ -99,4 +181,5 @@ footer {
   .projeto {
     width: 80%;
   }
+
 }
