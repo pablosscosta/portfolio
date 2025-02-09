@@ -14,7 +14,7 @@ body {
 
 /* Cabeçalho */
 header {
-  background-color: #333;
+  background-color: #3b5998;
   color: white;
   padding: 20px 0;
 }
@@ -137,7 +137,7 @@ section a {
 
 /* Rodapé */
 footer {
-  background-color: #333;
+  background-color: #3b5998;
   color: white;
   padding: 20px 0;
   text-align: center;
