@@ -1,78 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <!-- Cabeçalho -->
-  <header>
-    <div class="container">
-      <h1>Meu Portfólio</h1>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre mim</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pablo Costa | QA Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-10">
+      <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Pablo Costa</h1>
+        <nav class="space-x-4">
+          <a href="#sobre" class="text-gray-700 hover:text-blue-600">Sobre</a>
+          <a href="#projetos" class="text-gray-700 hover:text-blue-600">Projetos</a>
+          <a href="#contato" class="text-gray-700 hover:text-blue-600">Contato</a>
+        </nav>
+      </div>
+    </header>
 
-  <!-- Sobre mim -->
-    <section id="sobre">
-        <div class="container sobre-container">
-            <h2>Sobre mim</h2>
-            <div class="sobre-conteudo">
-                <div class="sobre-img">
-                    <img src="img/perfil.jpg" alt="Foto de perfil" class="perfil-img">
-                    <p class="nome">Pablo Costa</p>
-                </div>
-                <div class="sobre-texto">
-                    <p>Sou um desenvolvedor e designer apaixonado por criar soluções inovadoras e funcionais. Sempre buscando melhorar minhas habilidades e entregar projetos de qualidade.</p>
-                </div>
-            </div>
-               
-        </div>
+    <!-- Hero -->
+    <section class="pt-32 pb-20 text-center bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-4xl font-extrabold mb-4">Quality Assurance</h2>
+        <p class="text-lg">Portfólio profissional de Pablo Costa</p>
+      </div>
     </section>
 
-  <!-- Projetos -->
-  <section id="projetos">
-    <div class="container">
-      <h2>Meus Projetos</h2>
-      <div class="projetos-lista">
-        <div class="projeto">
-          <img src="img/projeto-01.jpg" alt="Projeto Linktree">
-          <h3>Projeto "Linktree"</h3>
-          <p>Projeto inspirado na funcionalidade do Linktree, onde o objetivo é criar uma página simples e personalizável com links para diversas redes sociais e conteúdos. A ideia é centralizar informações e facilitar o acesso a diferentes plataformas em um único lugar, oferecendo uma interface clean, responsiva e de fácil navegação..</p>
-        </div>
-        <div class="projeto">
-          <img src="img/projeto2.jpg" alt="Projeto 2">
-          <h3>Projeto 2</h3>
-          <p>Descrição do projeto 2.</p>
-        </div>
-        <!-- Adicionar mais projetos conforme necessário -->
+    <!-- Sobre mim -->
+    <section id="sobre" class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <h3 class="text-2xl font-bold mb-4">Sobre Mim</h3>
+        <p class="text-gray-700 leading-relaxed">
+          Sou um entusiasta de Quality Assurance em fase de transição de carreira, focado em desenvolver habilidades sólidas em testes manuais e, futuramente, testes automatizados. Busco aplicar boas práticas de QA para garantir qualidade, eficiência e confiança em produtos digitais.
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contato -->
-  <section id="contato">
-    <div class="container">
-      <h2>Contato</h2>
-      <p>Se você quiser entrar em contato, pode me encontrar através das <a href="https://pablosscosta.github.io/my-linktree/">redes sociais</a> ou enviar um e-mail para dev.pablocosta@gmail.com</p>
-    </div>
-  </section>
+    <!-- Projetos -->
+    <section id="projetos" class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4">
+        <h3 class="text-2xl font-bold mb-8 text-center">Projetos</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <!-- Projeto Card -->
+          <div class="bg-white rounded-2xl shadow-md p-6">
+            <h4 class="text-xl font-semibold mb-2">Teste em e-commerce fictício</h4>
+            <p class="text-gray-600 text-sm">
+              Estudo de caso de testes manuais realizados em uma plataforma de e-commerce simulada, com relatórios de bugs e casos de teste.
+            </p>
+          </div>
+          <!-- Adicione mais cards conforme for criando -->
+        </div>
+      </div>
+    </section>
 
-  <!-- Rodapé -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+    <!-- Contato -->
+    <section id="contato" class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-2xl font-bold mb-4">Contato</h3>
+        <p class="mb-4">Quer conversar ou colaborar? Me chame pelo LinkedIn ou envie um e-mail!</p>
+        <div class="flex justify-center gap-6">
+          <a href="https://linkedin.com/in/pablosilva013" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+          <a href="mailto:dev-pablocosta@gmail.com" class="text-blue-600 hover:underline">E-mail</a>
+          <a href="https://github.com/pablosscosta" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
+        </div>
+      </div>
+    </section>
 
-  <script src="js/script.js"></script>
-</body>
+    <!-- Footer -->
+    <footer class="bg-gray-200 py-6 text-center text-sm text-gray-600">
+      © 2025 Pablo Costa. Todos os direitos reservados.
+    </footer>
+  </body>
 </html>
