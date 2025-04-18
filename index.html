@@ -1,100 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+  <head> 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pablo Costa | QA Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+  
+    <!-- Tailwind config opcional pra usar Inter como default -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  
+    <!-- Estilo extra opcional -->
     <style>
       body {
-        font-family: 'Inter', sans-serif;
+        background-color: #0a0a0a; /* fallback caso Tailwind não carregue */
       }
     </style>
   </head>
-  <body class="bg-gray-100 text-gray-800">
+  
+  <body class="bg-gray-950 text-white font-sans antialiased leading-relaxed">
+
     <!-- Header -->
-    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-10">
+    <header class="bg-gray-900 border-b border-gray-800 fixed top-0 left-0 w-full z-20 shadow-md">
       <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold">Pablo Costa</h1>
-        <nav class="space-x-4">
-          <a href="#hero" class="text-gray-700 hover:text-blue-600">Home</a>
-          <a href="#sobre" class="text-gray-700 hover:text-blue-600">Sobre</a>
-          <a href="#projetos" class="text-gray-700 hover:text-blue-600">Projetos</a>
-          <a href="#contato" class="text-gray-700 hover:text-blue-600">Contato</a>
+        <h1 class="text-xl font-extrabold text-cyan-400 tracking-wide">Pablo Costa</h1>
+        <nav class="space-x-6">
+          <a href="#hero" class="text-gray-300 hover:text-cyan-400 transition">Home</a>
+          <a href="#sobre" class="text-gray-300 hover:text-cyan-400 transition">Sobre</a>
+          <a href="#projetos" class="text-gray-300 hover:text-cyan-400 transition">Projetos</a>
+          <a href="#contato" class="text-gray-300 hover:text-cyan-400 transition">Contato</a>
         </nav>
       </div>
     </header>
+    
+    
 
     <!-- Hero -->
-    <section id="hero" class="pt-32 pb-20 text-center bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+    <section id="hero" class="pt-32 pb-24 text-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
       <div class="max-w-3xl mx-auto px-4 flex flex-col items-center">
         <!-- Avatar -->
         <img
           src="img/avatar.jpg"
           alt="Foto de Pablo Costa"
-          class="w-32 h-32 rounded-full border-4 border-white shadow-lg mb-6 object-cover"
+          class="w-32 h-32 rounded-full border-2 border-cyan-400 shadow-lg mb-6 object-cover transition-transform duration-300 hover:scale-105"
         />
 
-        <h2 class="text-4xl font-extrabold mb-4">Quality Assurance</h2>
-        <p class="text-lg">Portfólio profissional</p>
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-3 text-cyan-400 drop-shadow-sm tracking-wide">Pablo Costa</h2>
+        <p class="text-lg md:text-xl text-gray-300 mb-6">Quality Assurance | Portfólio Profissional</p>
+
+        <a
+          href="#contato"
+          class="mt-2 inline-block bg-cyan-600 hover:bg-cyan-500 text-white font-medium px-6 py-3 rounded-full transition"
+        >
+          Fale comigo
+        </a>
       </div>
     </section>
 
 
-    <!-- Sobre mim -->
-    <section id="sobre" class="py-16 bg-white">
-      <div class="max-w-4xl mx-auto px-4">
-        <h3 class="text-2xl font-bold mb-4">Sobre Mim</h3>
-        <p class="text-gray-700 leading-relaxed">
-          Sou um entusiasta de Quality Assurance em fase de transição de carreira, focado em desenvolver habilidades sólidas em testes manuais e, futuramente, testes automatizados. Busco aplicar boas práticas de QA para garantir qualidade, eficiência e confiança em produtos digitais.
+
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-20 bg-gray-950 text-gray-300">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-6 tracking-wide">Sobre mim</h2>
+        <p class="text-lg leading-relaxed text-gray-400">
+          Olá! Sou <span class="text-white font-semibold">Pablo Costa</span>, entusiasta em tecnologia e Qualidade de Software. Estou em transição de carreira, estudando QA com foco em testes manuais e automação.
+          <br /><br />
+          Meu objetivo é garantir que aplicações entreguem valor real com qualidade, confiabilidade e uma boa experiência para o usuário. Este portfólio é onde compartilho minha trajetória, estudos de caso e projetos práticos.
         </p>
       </div>
     </section>
 
+
     <!-- Projetos -->
-    <section id="projetos" class="py-16 bg-gray-100">
+    <section id="projetos" class="py-20 bg-gray-900 text-gray-300">
       <div class="max-w-6xl mx-auto px-4">
-        <h3 class="text-2xl font-bold mb-8 text-center">Projetos</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <!-- Projeto Card -->
-          <div class="bg-white rounded-2xl shadow-md p-6">
-            <h4 class="text-xl font-semibold mb-2">Teste em e-commerce fictício</h4>
-            <p class="text-gray-600 text-sm">
-              Estudo de caso de testes manuais realizados em uma plataforma de e-commerce simulada, com relatórios de bugs e casos de teste.
+        <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 text-center mb-12 tracking-wide">Projetos</h2>
+
+        <div class="grid gap-8 md:grid-cols-2">
+          <!-- Projeto exemplo 1 -->
+          <div class="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold text-white mb-2">Estudo de Caso 1</h3>
+            <p class="text-gray-400 mb-4">
+              Projeto fictício para demonstrar habilidades em testes manuais: planejamento, execução e documentação de bugs.
             </p>
+            <a href="#" class="text-cyan-400 hover:text-cyan-300 underline transition">Ver mais</a>
           </div>
-          <!-- Adicione mais cards conforme for criando -->
+
+          <!-- Projeto exemplo 2 -->
+          <div class="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold text-white mb-2">Estudo de Caso 2</h3>
+            <p class="text-gray-400 mb-4">
+              Testes automatizados em um sistema web utilizando ferramentas como Selenium e JavaScript.
+            </p>
+            <a href="#" class="text-cyan-400 hover:text-cyan-300 underline transition">Ver mais</a>
+          </div>
         </div>
       </div>
     </section>
 
+
     <!-- Contato -->
-    <section id="contato" class="py-20 bg-gradient-to-r from-gray-100 to-white">
+    <section id="contato" class="py-20 bg-gray-950 text-gray-300">
       <div class="max-w-3xl mx-auto px-4 text-center">
-        <h3 class="text-3xl font-bold mb-6 text-gray-800">Entre em Contato</h3>
-        <p class="mb-8 text-gray-600">Fico à disposição para conversar sobre oportunidades, projetos ou apenas trocar ideias!</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 tracking-wide">Contato</h2>
+        <p class="text-lg text-gray-400 mb-8">
+          Me envie uma mensagem ou conecte-se comigo pelas redes abaixo.
+        </p>
 
-        <div class="flex flex-col sm:flex-row justify-center gap-6">
-          <!-- LinkedIn -->
-          <a href="https://linkedin.com/in/pablosilva013" target="_blank" class="flex items-center gap-3 px-5 py-3 bg-blue-600 text-white rounded-2xl shadow hover:bg-blue-700 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v6h-4v-6a2 2 0 0 0-4 0v6h-4v-6a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            LinkedIn
-          </a>
-
+        <div class="flex justify-center space-x-6">
           <!-- Email -->
-          <a href="mailto:dev.pablocosta@gmail.com" class="flex items-center gap-3 px-5 py-3 bg-gray-800 text-white rounded-2xl shadow hover:bg-gray-900 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z" stroke="none"/><polyline points="4,4 12,13 20,4" fill="none" /></svg>
+          <a href="mailto:dev.pablocosta@gmail.com" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition">
+            <i class="fas fa-envelope w-8 h-8 inline-block mr-1"></i>
             Email
           </a>
 
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/pablosilva013" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition">
+            <i class="fab fa-linkedin w-8 h-8 inline-block mr-1"></i>
+            LinkedIn
+          </a>
+
           <!-- GitHub -->
-          <a href="https://github.com/pablosscosta" target="_blank" class="flex items-center gap-3 px-5 py-3 bg-gray-900 text-white rounded-2xl shadow hover:bg-gray-700 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12a12 12 0 0 0 8.207 11.386c.6.113.793-.26.793-.577 0-.285-.011-1.04-.016-2.042-3.338.724-4.042-1.61-4.042-1.61-.546-1.386-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.494.996.108-.775.419-1.305.762-1.605-2.665-.304-5.467-1.333-5.467-5.931 0-1.31.468-2.381 1.235-3.221-.123-.303-.535-1.526.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.553 3.296-1.23 3.296-1.23.654 1.65.242 2.873.12 3.176.77.84 1.232 1.911 1.232 3.221 0 4.61-2.807 5.624-5.479 5.921.43.372.823 1.106.823 2.229 0 1.609-.015 2.908-.015 3.306 0 .32.19.694.8.576A12.001 12.001 0 0 0 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          <a href="https://github.com/pablosscosta" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition">
+            <i class="fab fa-github w-8 h-8 inline-block mr-1"></i>
             GitHub
           </a>
         </div>
@@ -102,9 +147,12 @@
     </section>
 
 
+
+
     <!-- Footer -->
     <footer class="bg-gray-200 py-6 text-center text-sm text-gray-600">
       © 2025 Pablo Costa. Todos os direitos reservados.
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
