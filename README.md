@@ -29,5 +29,5 @@ Este projeto está licenciado sob a licença **MIT** - veja o arquivo `LICENSE` 
 ### Contato
 
 Para entrar em contato, você pode me encontrar através de:
-* **E-mail:** [Seu e-mail aqui]
-* **LinkedIn:** [Seu link do LinkedIn aqui]
+* **E-mail:** pablosousa013@gmail.com
+* **LinkedIn:** [https://www.linkedin.com/in/pablosilva013/](https://www.linkedin.com/in/pablosilva013/)
